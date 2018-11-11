@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>addnote</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Edit Note</h1>
+  <div class="container">
+  <form method="post" action="/editnote">
+    <input type = "hidden" name="_id" class="form-control" value="<%= note._id %>">
+  <div class="box">
+    <textarea name="title" rows="20" columns="90"><%= note.title %></textarea>
+     <textarea name="note" rows="20" columns="90"> <%= note.note %></textarea>
+  </div>
+  
+  <div>
+    <button type="submit">submit1</button>
+  </div>
+  </form>
+  </div>
+</body>
+</html>
